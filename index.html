@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#060b13">
+  <title>toyoshim-i // THE WIRED INDEX — Experimental AI &amp; Systems Lab</title>
+  <meta name="description" content="toyoshim-i (toyoshim@i) — Experimental AI, WebGPU, retro architecture, and autonomous agent projects with interactive browser demos.">
+  <meta property="og:title" content="toyoshim-i // THE WIRED INDEX">
+  <meta property="og:description" content="Experimental AI &amp; Systems Playground — Interactive WebGPU / WASM / v86 Live Demos &amp; Open-Source Repositories.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://toyoshim-i.github.io/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main-title" class="skip-link visually-hidden">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <div class="sys-eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>NODE // TOYOSHIM-I.GITHUB.IO</span>
+          <span class="sep" aria-hidden="true">::</span>
+          <span>STATUS: ONLINE</span>
+        </div>
+        <h1 id="main-title" tabindex="-1" class="glitch-title">
+          toyoshim<span class="dot">-</span>i <span class="slash">//</span> the wired
+        </h1>
+        <p class="subtitle">
+          Experimental AI, WebGPU, Retro Systems &amp; Autonomous Agent Playground
+        </p>
+      </div>
+
+      <div class="telemetry-panel" aria-label="System telemetry">
+        <div class="telemetry-row">
+          <span class="t-key">ORG_HANDLE</span>
+          <a href="https://github.com/toyoshim-i" class="t-val t-link">@toyoshim-i ↗</a>
+        </div>
+        <div class="telemetry-row">
+          <span class="t-key">LIVE_DEMOS</span>
+          <span class="t-val accent-cyan">07 ACTIVE NODES</span>
+        </div>
+        <div class="telemetry-row">
+          <span class="t-key">DOC_PORTALS</span>
+          <span class="t-val accent-amber">02 MANUAL TREES</span>
+        </div>
+        <div class="telemetry-row">
+          <span class="t-key">EXEC_RUNTIME</span>
+          <span class="t-val accent-rust">WebGPU / v86 / WASM / MCP</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="control-bar" aria-label="Project filters and search">
+      <div class="filter-group" role="group" aria-label="Category filter">
+        <button type="button" class="filter-chip" data-filter="all" aria-pressed="true">
+          <span class="chip-prefix">[00]</span> ALL <span class="chip-count">14</span>
+        </button>
+        <button type="button" class="filter-chip" data-filter="demo" aria-pressed="false">
+          <span class="chip-prefix">[01]</span> LIVE DEMOS <span class="chip-count">7</span>
+        </button>
+        <button type="button" class="filter-chip" data-filter="webgpu" aria-pressed="false">
+          <span class="chip-prefix">[02]</span> WebGPU / AI <span class="chip-count">5</span>
+        </button>
+        <button type="button" class="filter-chip" data-filter="docs" aria-pressed="false">
+          <span class="chip-prefix">[03]</span> DOCS &amp; SPEC <span class="chip-count">2</span>
+        </button>
+        <button type="button" class="filter-chip" data-filter="repo" aria-pressed="false">
+          <span class="chip-prefix">[04]</span> TOOLS &amp; REPOS <span class="chip-count">5</span>
+        </button>
+      </div>
+
+      <div class="search-box">
+        <label for="terminal-search" class="search-prompt">
+          <span class="prompt-sym" aria-hidden="true">grep -i</span>
+          <span class="visually-hidden">Filter projects by keyword</span>
+        </label>
+        <input
+          id="terminal-search"
+          type="search"
+          placeholder="filter nodes (e.g. WebGPU, Rust, PLaMo, X68000)…"
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <kbd class="search-kbd" aria-hidden="true">/</kbd>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="site-main">
+    <div id="filter-status" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- ==================== SECTION 01: INTERACTIVE LIVE DEMOS ==================== -->
+    <section class="node-section" data-section="demos" aria-labelledby="sec-demos-heading">
+      <div class="section-rule">
+        <span class="sec-code">SEC_01</span>
+        <h2 id="sec-demos-heading">INTERACTIVE LIVE DEMOS <span class="sec-jp">// ZERO-INSTALL BROWSER RUNTIMES</span></h2>
+        <hr aria-hidden="true">
+        <span class="sec-meta">EXEC_ENV: BROWSER_CLIENT</span>
+      </div>
+
+      <div class="card-grid demo-grid">
+        <!-- 1. PiPAPo -->
+        <article class="card pane-card" data-category="demo" data-tags="pipapo ppap os unix posix microcontroller retro cpu v86 xterm emulator rogue rust c">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">SYS-01 // KERNEL_EMU</span>
+              <span class="live-badge"><span class="pulse" aria-hidden="true"></span>LIVE v86 CRT</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/PiPAPo/" class="card-link">
+                PiPAPo <span class="title-sub">// the wired</span>
+              </a>
+            </h3>
+            <p class="card-tagline">Portable UNIX-like Micro OS for Bare-Metal Microcontrollers &amp; Retro CPUs</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              A portable POSIX-subset micro OS running live inside your browser on a dual-CRT <code>v86</code> emulator (VGA + serial console). Boots directly into a custom <code>push</code> shell with ~50 from-scratch core utilities, <code>romfs</code>/<code>VFAT</code> filesystems, and classic <code>Rogue 5.4.4</code>.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="PiPAPo tech stack">
+              <li>v86 + xterm.js</li>
+              <li>POSIX / romfs</li>
+              <li>Rogue 5.4.4</li>
+              <li>PicoCalc / Retro CPU</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/PiPAPo/" class="btn-launch" aria-label="Launch Demo: PiPAPo (the wired)">
+              <span aria-hidden="true">▶</span> LAUNCH DEMO
+            </a>
+            <a href="https://github.com/toyoshim-i/PiPAPo" class="btn-repo" aria-label="GitHub Repository: PiPAPo">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+
+        <!-- 2. hachiue -->
+        <article class="card pane-card" data-category="demo webgpu" data-tags="hachiue webgpu llm translation plamo3 bonsai qwen gguf opfs mobile inference">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">SYS-02 // WEBGPU_LLM</span>
+              <span class="live-badge cyan"><span class="pulse" aria-hidden="true"></span>LIVE WebGPU</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/hachiue/" class="card-link">
+                🪴 hachiue <span class="title-sub">// WebGPU LLM</span>
+              </a>
+            </h3>
+            <p class="card-tagline">Mobile-Optimized WebGPU Inference Engine for Bonsai 1/2 &amp; PLaMo 3 Translate</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              Zero-dependency, mobile-optimized WebGPU LLM and translation runtime. Streams unmodified <code>.gguf</code> models (PrismML Bonsai 1/2 1-bit &amp; ternary, PFN PLaMo 3 Translate) directly from Hugging Face into OPFS cache with custom WGSL compute kernels.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="hachiue tech stack">
+              <li>WebGPU WGSL</li>
+              <li>GGUF Direct</li>
+              <li>PLaMo 3 / Bonsai 2</li>
+              <li>OPFS Streaming</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/hachiue/" class="btn-launch" aria-label="Launch Demo: hachiue WebGPU Translate and Chat">
+              <span aria-hidden="true">▶</span> LAUNCH DEMO
+            </a>
+            <a href="https://github.com/toyoshim-i/hachiue" class="btn-repo" aria-label="GitHub Repository: hachiue">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+
+        <!-- 3. diorama -->
+        <article class="card pane-card" data-category="demo webgpu" data-tags="diorama webgpu plamo3 safetensors weight space modding sparse patch hachiue">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">SYS-03 // WEIGHT_MOD</span>
+              <span class="live-badge cyan"><span class="pulse" aria-hidden="true"></span>LIVE WebGPU</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/diorama/" class="card-link">
+                🛠️ diorama <span class="title-sub">// Weight Patcher</span>
+              </a>
+            </h3>
+            <p class="card-tagline">PLaMo 3 Weight-Space Modding Playground &amp; Sparse Row Patcher</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              Weight-space modding playground for PLaMo 3 Translate powered by <code>hachiue</code>. Instead of redistributing 522 MiB base models, it hot-swaps ~792 KiB <code>.safetensors</code> sparse row patches directly inside GPU storage buffers in ~5 ms to shift translation tone and persona on the fly.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="diorama tech stack">
+              <li>WebGPU Hot-Swap</li>
+              <li>.safetensors Patch</li>
+              <li>PLaMo 3 Translate</li>
+              <li>Powered by hachiue</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/diorama/" class="btn-launch" aria-label="Launch Demo: diorama Weight-Space Modding Playground">
+              <span aria-hidden="true">▶</span> LAUNCH DEMO
+            </a>
+            <a href="https://github.com/toyoshim-i/diorama" class="btn-repo" aria-label="GitHub Repository: diorama">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+
+        <!-- 4. neo -->
+        <article class="card pane-card" data-category="demo webgpu" data-tags="neo wetware neural overclock speed reading ewpm rsvp tachistoscope webgpu gemma cognitive">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">SYS-04 // WETWARE_v4</span>
+              <span class="live-badge magenta"><span class="pulse" aria-hidden="true"></span>LIVE WebGPU</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/neo/" class="card-link">
+                neo <span class="title-sub">// WETWARE OVERCLOCK</span>
+              </a>
+            </h3>
+            <p class="card-tagline">Cognitive-Science Speed-Reading Trainer &amp; On-Device LLM Comprehension Benchmark</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              Designed to break the subvocalization bottleneck and expand parafoveal span across 4 training modes (<code>Chunk Pacer</code>, <code>RSVP Stream</code>, <code>4/3/2 Overclock</code>, <code>Tachistoscope</code>). Synthesizes comprehension checks via in-browser WebGPU LLMs (Gemma) to score effective throughput (<code>eWPM</code>) on a 5-axis radar chart.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="neo tech stack">
+              <li>WebGPU / WebLLM</li>
+              <li>Gemma 3 / 4</li>
+              <li>RSVP &amp; Chunk Pacer</li>
+              <li>5-Axis eWPM Radar</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/neo/" class="btn-launch" aria-label="Launch Demo: neo WETWARE NEURAL OVERCLOCK">
+              <span aria-hidden="true">▶</span> LAUNCH DEMO
+            </a>
+            <a href="https://github.com/toyoshim-i/neo" class="btn-repo" aria-label="GitHub Repository: neo">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+
+        <!-- 5. Fabre -->
+        <article class="card pane-card" data-category="demo webgpu" data-tags="fabre flow agent builder runtime engine mcp llm workflow canvas vanilla js">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">SYS-05 // AGENT_FLOW</span>
+              <span class="live-badge"><span class="pulse" aria-hidden="true"></span>LIVE CANVAS</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/Fabre/" class="card-link">
+                Fabre <span class="title-sub">// Agent Engine</span>
+              </a>
+            </h3>
+            <p class="card-tagline">Flow-based Agent Builder &amp; Serverless Visual Runtime Engine</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              Zero-dependency, pure-vanilla JavaScript visual IDE for designing, executing, and debugging autonomous LLM agent workflows. Features animated signal wires, sliding-window session memory, OpenAI function-calling ports, JS sandboxes, local FS access, and MCP server integration.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="Fabre tech stack">
+              <li>Node Canvas UI</li>
+              <li>MCP Integration</li>
+              <li>Zero-Dependency JS</li>
+              <li>Tool Sandbox</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/Fabre/" class="btn-launch" aria-label="Launch Demo: Fabre Flow-based Agent Builder">
+              <span aria-hidden="true">▶</span> LAUNCH DEMO
+            </a>
+            <a href="https://github.com/toyoshim-i/Fabre" class="btn-repo" aria-label="GitHub Repository: Fabre">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+
+        <!-- 6. Argonventure -->
+        <article class="card pane-card" data-category="demo" data-tags="argonventure silent pulse pastel void adv game interrogation webaudio ecg pwa">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">SYS-06 // ADV_ANTHOLOGY</span>
+              <span class="live-badge magenta"><span class="pulse" aria-hidden="true"></span>PLAYABLE 2 VOLS</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/Argonventure/" class="card-link">
+                Argonventure <span class="title-sub">// ADVs by Argon</span>
+              </a>
+            </h3>
+            <p class="card-tagline">Psychological Interrogation Adventure Anthology (SILENT PULSE &amp; PASTEL VOID)</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              A two-volume psychological interrogation adventure anthology playable in ~10 minutes. Features real-time ECG biometric monitors, procedural Web Audio heartbeat synthesis, attitude shifts, and bluff/silence traps across <strong>Vol.1: SILENT PULSE</strong> and <strong>Vol.2: PASTEL VOID</strong>.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="Argonventure tech stack">
+              <li>Web Audio Synth ECG</li>
+              <li>Vol.1 SILENT PULSE</li>
+              <li>Vol.2 PASTEL VOID</li>
+              <li>Mobile / PC PWA</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/Argonventure/" class="btn-launch" aria-label="Play Argonventure Vol.1 SILENT PULSE">
+              <span aria-hidden="true">▶</span> VOL.1 SILENT PULSE
+            </a>
+            <a href="https://toyoshim-i.github.io/Argonventure/pastel.html" class="btn-sub-demo" aria-label="Play Argonventure Vol.2 PASTEL VOID">
+              <span aria-hidden="true">▶</span> VOL.2 PASTEL VOID
+            </a>
+            <a href="https://github.com/toyoshim-i/Argonventure" class="btn-repo" aria-label="GitHub Repository: Argonventure">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+
+        <!-- 7. Karakuri -->
+        <article class="card pane-card" data-category="demo webgpu" data-tags="karakuri vj shader wgsl webgpu kir dsl mcp rust live visual performance">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">SYS-07 // VISUAL_SYNTH</span>
+              <span class="live-badge cyan"><span class="pulse" aria-hidden="true"></span>LIVE WebGPU</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/Karakuri/demo/index.html" class="card-link">
+                Karakuri <span class="title-sub">// Visual Instrument</span>
+              </a>
+            </h3>
+            <p class="card-tagline">GPU-Native, AI-Native Real-Time Visual Performance System for VJ Work</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              A visual instrument that writes its own material. Compiles procedural <code>.kir</code> shader programs dynamically to WGSL on the fly, enabling human operators and autonomous AI agents to co-perform across multi-deck live visual sets with atomic frame-boundary hot-swapping.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="Karakuri tech stack">
+              <li>.kir Procedural DSL</li>
+              <li>WebGPU / WGSL</li>
+              <li>MCP Co-Performance</li>
+              <li>Rust / Multi-Deck</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/Karakuri/demo/index.html" class="btn-launch" aria-label="Launch Demo: Karakuri WebGPU Visual Instrument">
+              <span aria-hidden="true">▶</span> LAUNCH DEMO
+            </a>
+            <a href="https://github.com/toyoshim-i/Karakuri" class="btn-repo" aria-label="GitHub Repository: Karakuri">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 02: DOCUMENTATION & PORTALS ==================== -->
+    <section class="node-section" data-section="docs" aria-labelledby="sec-docs-heading">
+      <div class="section-rule">
+        <span class="sec-code">SEC_02</span>
+        <h2 id="sec-docs-heading">DOCUMENTATION &amp; SPEC PORTALS <span class="sec-jp">// ONLINE MANUALS</span></h2>
+        <hr aria-hidden="true">
+        <span class="sec-meta">DOC_TREE: GH_PAGES</span>
+      </div>
+
+      <div class="card-grid docs-grid">
+        <!-- kinema -->
+        <article class="card doc-card" data-category="docs" data-tags="kinema verilog kicad pcb hardware circuit equivalence verification rust mdbook">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">DOC-01 // EDA_TOOLCHAIN</span>
+              <span class="doc-badge">ONLINE MANUAL</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/kinema/" class="card-link">
+                kinema <span class="title-sub">// Circuit HDL</span>
+              </a>
+            </h3>
+            <p class="card-tagline">Circuit Description Language &amp; KiCad Equivalence Verification Tool</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              An offline hardware description toolchain enabling engineers and AI coding agents to design printed circuit boards (PCBs) in a strict structural subset of Verilog (<code>.v</code>), generate KiCad netlists, and verify schematic-to-board equivalence.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="kinema tech stack">
+              <li>Structural Verilog</li>
+              <li>KiCad Netlist &amp; Check</li>
+              <li>AI-Ready EDA</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/kinema/" class="btn-doc" aria-label="Read Documentation: kinema Online Manual">
+              📖 OPEN MANUAL
+            </a>
+            <a href="https://github.com/toyoshim-i/kinema" class="btn-repo" aria-label="GitHub Repository: kinema">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+
+        <!-- agent-man -->
+        <article class="card doc-card" data-category="docs" data-tags="agent-man mcp documentation cli skill llms.txt rust context engineering">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">DOC-02 // AGENT_DOCS</span>
+              <span class="doc-badge">ONLINE MANUAL</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/agent-man/" class="card-link">
+                agent-man <span class="title-sub">// Just-in-Time Knowledge</span>
+              </a>
+            </h3>
+            <p class="card-tagline">Context-Engineering-Free, Agent-Native Documentation &amp; MCP Engine</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              Embedded documentation and Model Context Protocol (MCP) engine for Rust CLI tools and agent runtimes. Compiles a single Markdown source into on-demand in-binary CLI guides (<code>guide &lt;topic&gt;</code>), <code>SKILL.md</code>, <code>llms.txt</code>, and MCP servers.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="agent-man tech stack">
+              <li>Rust / Crates.io</li>
+              <li>MCP Server</li>
+              <li>SKILL.md / llms.txt</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/agent-man/" class="btn-doc" aria-label="Read Documentation: agent-man Online Manual">
+              📖 OPEN MANUAL
+            </a>
+            <a href="https://github.com/toyoshim-i/agent-man" class="btn-repo" aria-label="GitHub Repository: agent-man">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 03: EXPERIMENTAL REPOS & TOOLING ==================== -->
+    <section class="node-section" data-section="repos" aria-labelledby="sec-repos-heading">
+      <div class="section-rule">
+        <span class="sec-code">SEC_03</span>
+        <h2 id="sec-repos-heading">EXPERIMENTAL REPOSITORIES &amp; TOOLING <span class="sec-jp">// SYSTEMS &amp; DRIVERS</span></h2>
+        <hr aria-hidden="true">
+        <span class="sec-meta">GIT_ARCHIVE: PUBLIC</span>
+      </div>
+
+      <div class="card-grid repo-grid">
+        <!-- Rhas -->
+        <article class="card repo-card" data-category="repo" data-tags="rhas x68000 m68000 68000 has060x assembler rust retro">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">REPO-01 // RETRO_ASM</span>
+              <span class="lang-tag">Rust</span>
+            </div>
+            <h3>
+              <a href="https://github.com/toyoshim-i/Rhas" class="card-link">Rhas</a>
+            </h3>
+          </header>
+          <p class="repo-desc">
+            Native cross-assembler port of the classic X68000 M68000 macro assembler (<code>HAS060X.X</code>) written in Rust.
+          </p>
+        </article>
+
+        <!-- Rhlk -->
+        <article class="card repo-card" data-category="repo" data-tags="rhlk x68000 hlk hlkx linker rust retro">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">REPO-02 // RETRO_LINKER</span>
+              <span class="lang-tag">Rust</span>
+            </div>
+            <h3>
+              <a href="https://github.com/toyoshim-i/Rhlk" class="card-link">Rhlk</a>
+            </h3>
+          </header>
+          <p class="repo-desc">
+            Host-native Rust port of the high-speed X68000 object linker (<code>HLK / HLKX</code>).
+          </p>
+        </article>
+
+        <!-- execon -->
+        <article class="card repo-card" data-category="repo" data-tags="execon macos swift gui windows exe pe icon extractor ico png">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">REPO-03 // MACOS_UTILITY</span>
+              <span class="lang-tag">Swift</span>
+            </div>
+            <h3>
+              <a href="https://github.com/toyoshim-i/execon" class="card-link">execon</a>
+            </h3>
+          </header>
+          <p class="repo-desc">
+            Native macOS GUI application that parses Windows Portable Executable (<code>.exe</code>) binaries directly to extract and save embedded icons as <code>.ico</code> or <code>.png</code>.
+          </p>
+        </article>
+
+        <!-- vrealone -->
+        <article class="card repo-card" data-category="repo" data-tags="vrealone xreal one steamvr openvr hmd driver ar xr linux windows">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">REPO-04 // XR_DRIVER</span>
+              <span class="lang-tag">C++ / Rust</span>
+            </div>
+            <h3>
+              <a href="https://github.com/toyoshim-i/vrealone" class="card-link">vrealone</a>
+            </h3>
+          </header>
+          <p class="repo-desc">
+            Apache-2.0-licensed SteamVR (OpenVR direct-display HMD) driver for XREAL One glasses supporting Linux and Windows x64.
+          </p>
+        </article>
+
+        <!-- agent-man-mg -->
+        <article class="card repo-card" data-category="repo" data-tags="agent-man-mg motion graphics vj craft mcp cli agent">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">REPO-05 // AGENT_KNOWLEDGE</span>
+              <span class="lang-tag">Rust / MCP</span>
+            </div>
+            <h3>
+              <a href="https://github.com/toyoshim-i/agent-man-mg" class="card-link">agent-man-mg</a>
+            </h3>
+          </header>
+          <p class="repo-desc">
+            Motion graphics and VJ craft knowledge packaged as a CLI and MCP server to empower lightweight models with frontier-grade visual direction.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div id="empty-state" class="empty-state" hidden>
+      <p class="empty-code">[ERR_404: NO_MATCHING_NODES]</p>
+      <p class="empty-msg">No projects matched the active filter or search query.</p>
+      <button type="button" id="reset-filter-btn" class="btn-launch">RESET FILTER</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">toyoshim-i // toyoshim@i</span>
+        <span class="footer-copy">Experimental AI &amp; Systems Playground</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/toyoshim-i">GitHub Organization (@toyoshim-i) ↗</a>
+        <a href="https://github.com/toyoshim">Personal Account (@toyoshim) ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
