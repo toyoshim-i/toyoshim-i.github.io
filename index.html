@@ -60,16 +60,16 @@
     <nav class="control-bar" aria-label="Project filters and search">
       <div class="filter-group" role="group" aria-label="Category filter">
         <button type="button" class="filter-chip" data-filter="all" aria-pressed="true">
-          <span class="chip-prefix">[00]</span> ALL <span class="chip-count">14</span>
+          <span class="chip-prefix">[00]</span> ALL <span class="chip-count">16</span>
         </button>
         <button type="button" class="filter-chip" data-filter="demo" aria-pressed="false">
-          <span class="chip-prefix">[01]</span> LIVE DEMOS <span class="chip-count">7</span>
+          <span class="chip-prefix">[01]</span> LIVE DEMOS <span class="chip-count">8</span>
         </button>
         <button type="button" class="filter-chip" data-filter="webgpu" aria-pressed="false">
           <span class="chip-prefix">[02]</span> WebGPU / AI <span class="chip-count">5</span>
         </button>
         <button type="button" class="filter-chip" data-filter="docs" aria-pressed="false">
-          <span class="chip-prefix">[03]</span> DOCS &amp; SPEC <span class="chip-count">2</span>
+          <span class="chip-prefix">[03]</span> DOCS &amp; SPEC <span class="chip-count">3</span>
         </button>
         <button type="button" class="filter-chip" data-filter="repo" aria-pressed="false">
           <span class="chip-prefix">[04]</span> TOOLS &amp; REPOS <span class="chip-count">5</span>
@@ -106,7 +106,44 @@
       </div>
 
       <div class="card-grid demo-grid">
-        <!-- 1. PiPAPo -->
+        <!-- 1. bonbobon -->
+        <article class="card pane-card" data-category="demo" data-tags="bonbobon pinball arcade retro pc98 fm synth canvas game physics bishoujo opna mecha">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">GAME-01 // PINBALL_RETRO</span>
+              <span class="live-badge"><span class="pulse" aria-hidden="true"></span>LIVE CANVAS</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/bonbobon/" class="card-link">
+                桃色装甲ボンぼや〜ジュッ！ <span class="title-sub">// MOMOIRO SOUKOU BON-VOYAGE!</span>
+              </a>
+            </h3>
+            <p class="card-tagline">Authentic 16-Bit PC-9801 Style Sci-Fi Mech-Girl Pinball Arcade Game</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              A high-octane cyber pinball arcade game inspired by late-80s / early-90s PC-9801 bishoujo classics. Features multi-stage mecha boss battles, multi-piece dynamic armor stripping, 16-color ordered Bayer dithering pixel art, soft rubber-membrane physics, and 6-op FM synth audio.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="bonbobon tech stack">
+              <li>Canvas 2D Physics</li>
+              <li>YM2608 OPNA FM Synth</li>
+              <li>PC-9801 16-Color Pixel Art</li>
+              <li>Armor-Break / Boss Battle</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/bonbobon/" class="btn-launch" aria-label="Launch Demo: 桃色装甲ボンぼや〜ジュッ！">
+              <span aria-hidden="true">▶</span> LAUNCH DEMO
+            </a>
+            <a href="https://github.com/toyoshim-i/bonbobon" class="btn-repo" aria-label="GitHub Repository: bonbobon">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+
+        <!-- 2. PiPAPo -->
         <article class="card pane-card" data-category="demo" data-tags="pipapo ppap os unix posix microcontroller retro cpu v86 xterm emulator rogue rust c">
           <header class="card-header">
             <div class="pane-head">
@@ -143,7 +180,7 @@
           </footer>
         </article>
 
-        <!-- 2. hachiue -->
+        <!-- 3. hachiue -->
         <article class="card pane-card" data-category="demo webgpu" data-tags="hachiue webgpu llm translation plamo3 bonsai qwen gguf opfs mobile inference">
           <header class="card-header">
             <div class="pane-head">
@@ -180,7 +217,7 @@
           </footer>
         </article>
 
-        <!-- 3. diorama -->
+        <!-- 4. diorama -->
         <article class="card pane-card" data-category="demo webgpu" data-tags="diorama webgpu plamo3 safetensors weight space modding sparse patch hachiue">
           <header class="card-header">
             <div class="pane-head">
@@ -217,7 +254,7 @@
           </footer>
         </article>
 
-        <!-- 4. neo -->
+        <!-- 5. neo -->
         <article class="card pane-card" data-category="demo webgpu" data-tags="neo wetware neural overclock speed reading ewpm rsvp tachistoscope webgpu gemma cognitive">
           <header class="card-header">
             <div class="pane-head">
@@ -254,7 +291,7 @@
           </footer>
         </article>
 
-        <!-- 5. Fabre -->
+        <!-- 6. Fabre -->
         <article class="card pane-card" data-category="demo webgpu" data-tags="fabre flow agent builder runtime engine mcp llm workflow canvas vanilla js">
           <header class="card-header">
             <div class="pane-head">
@@ -291,7 +328,7 @@
           </footer>
         </article>
 
-        <!-- 6. Argonventure -->
+        <!-- 7. Argonventure -->
         <article class="card pane-card" data-category="demo" data-tags="argonventure silent pulse pastel void adv game interrogation webaudio ecg pwa">
           <header class="card-header">
             <div class="pane-head">
@@ -331,7 +368,7 @@
           </footer>
         </article>
 
-        <!-- 7. Karakuri -->
+        <!-- 8. Karakuri -->
         <article class="card pane-card" data-category="demo webgpu" data-tags="karakuri vj shader wgsl webgpu kir dsl mcp rust live visual performance">
           <header class="card-header">
             <div class="pane-head">
@@ -447,6 +484,43 @@
               📖 OPEN MANUAL
             </a>
             <a href="https://github.com/toyoshim-i/agent-man" class="btn-repo" aria-label="GitHub Repository: agent-man">
+              GitHub ↗
+            </a>
+          </footer>
+        </article>
+
+        <!-- aydb -->
+        <article class="card doc-card" data-category="docs" data-tags="aydb database storage engine rust sqlite vtab smb ntfs lsm wisckey wal acid benchmarks">
+          <header class="card-header">
+            <div class="pane-head">
+              <span class="node-id">DOC-03 // STORAGE_ENGINE</span>
+              <span class="doc-badge">ONLINE MANUAL</span>
+            </div>
+            <h3>
+              <a href="https://toyoshim-i.github.io/aydb/" class="card-link">
+                aydb <span class="title-sub">// All Your DataBase</span>
+              </a>
+            </h3>
+            <p class="card-tagline">Windows/SMB-Optimized Embedded Storage Engine &amp; Lightweight SQL Runtime in Zero-Dependency Rust</p>
+          </header>
+
+          <div class="card-content">
+            <p>
+              A zero-dependency embedded storage engine engineered for Windows NTFS and SMB/CIFS network shares. Unifies high-frequency ACID commit durability with large-scale bounded blob caching via WiscKey-style value separation, dual-stream epoch WAL, and SQLite Virtual Table (VTAB) integration.
+            </p>
+            <ul class="tech-tags" role="list" aria-label="aydb tech stack">
+              <li>Zero-Dependency Rust</li>
+              <li>LSM + WiscKey Blob</li>
+              <li>Dual-Stream WAL</li>
+              <li>SQLite Virtual Table (VTAB)</li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <a href="https://toyoshim-i.github.io/aydb/" class="btn-doc" aria-label="Read Documentation: aydb Online Manual">
+              📖 OPEN MANUAL
+            </a>
+            <a href="https://github.com/toyoshim-i/aydb" class="btn-repo" aria-label="GitHub Repository: aydb">
               GitHub ↗
             </a>
           </footer>
